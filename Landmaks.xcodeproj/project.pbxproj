@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		BA0934562BF71291000ACB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934552BF71291000ACB40 /* AppDelegate.swift */; };
 		BA0934582BF71291000ACB40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934572BF71291000ACB40 /* SceneDelegate.swift */; };
-		BA09345A2BF71291000ACB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934592BF71291000ACB40 /* ViewController.swift */; };
+		BA09345A2BF71291000ACB40 /* LandmaksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934592BF71291000ACB40 /* LandmaksViewController.swift */; };
 		BA09345D2BF71291000ACB40 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA09345C2BF71291000ACB40 /* Base */; };
 		BA09345F2BF71292000ACB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA09345E2BF71292000ACB40 /* Assets.xcassets */; };
 		BA0934622BF71292000ACB40 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA0934612BF71292000ACB40 /* Base */; };
+		BA0934712BF71A3E000ACB40 /* LandmaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934702BF71A3E000ACB40 /* LandmaksViewModel.swift */; };
+		BA0934732BF71A7E000ACB40 /* LandmaksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934722BF71A7E000ACB40 /* LandmaksCollectionViewCell.swift */; };
+		BA0934762BF7221B000ACB40 /* LandmaksEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934752BF7221B000ACB40 /* LandmaksEnum.swift */; };
+		BA0934792BF72376000ACB40 /* LandmaksViewLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0934782BF72376000ACB40 /* LandmaksViewLayouts.swift */; };
+		BA09347B2BF726D2000ACB40 /* LandmaksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA09347A2BF726D2000ACB40 /* LandmaksModel.swift */; };
+		BA09347D2BF72EF4000ACB40 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = BA09347C2BF72EF4000ACB40 /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA0934522BF71291000ACB40 /* Landmaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0934552BF71291000ACB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0934572BF71291000ACB40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA0934592BF71291000ACB40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA0934592BF71291000ACB40 /* LandmaksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksViewController.swift; sourceTree = "<group>"; };
 		BA09345C2BF71291000ACB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA09345E2BF71292000ACB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0934612BF71292000ACB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0934632BF71292000ACB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0934702BF71A3E000ACB40 /* LandmaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksViewModel.swift; sourceTree = "<group>"; };
+		BA0934722BF71A7E000ACB40 /* LandmaksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA0934752BF7221B000ACB40 /* LandmaksEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksEnum.swift; sourceTree = "<group>"; };
+		BA0934782BF72376000ACB40 /* LandmaksViewLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksViewLayouts.swift; sourceTree = "<group>"; };
+		BA09347A2BF726D2000ACB40 /* LandmaksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmaksModel.swift; sourceTree = "<group>"; };
+		BA09347C2BF72EF4000ACB40 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		BA0934542BF71291000ACB40 /* Landmaks */ = {
 			isa = PBXGroup;
 			children = (
+				BA0934772BF72229000ACB40 /* Enum */,
+				BA09346F2BF719CB000ACB40 /* Assets */,
+				BA09346E2BF71965000ACB40 /* Controller */,
+				BA09346D2BF718D3000ACB40 /* View */,
+				BA09346C2BF718C8000ACB40 /* ViewModel */,
+				BA09346B2BF718C0000ACB40 /* Model */,
 				BA0934552BF71291000ACB40 /* AppDelegate.swift */,
 				BA0934572BF71291000ACB40 /* SceneDelegate.swift */,
-				BA0934592BF71291000ACB40 /* ViewController.swift */,
 				BA09345B2BF71291000ACB40 /* Main.storyboard */,
-				BA09345E2BF71292000ACB40 /* Assets.xcassets */,
 				BA0934602BF71292000ACB40 /* LaunchScreen.storyboard */,
 				BA0934632BF71292000ACB40 /* Info.plist */,
 			);
 			path = Landmaks;
+			sourceTree = "<group>";
+		};
+		BA09346B2BF718C0000ACB40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA09347A2BF726D2000ACB40 /* LandmaksModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA09346C2BF718C8000ACB40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA0934702BF71A3E000ACB40 /* LandmaksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA09346D2BF718D3000ACB40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA0934742BF7214D000ACB40 /* Layouts */,
+				BA0934722BF71A7E000ACB40 /* LandmaksCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA09346E2BF71965000ACB40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA0934592BF71291000ACB40 /* LandmaksViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA09346F2BF719CB000ACB40 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BA09347C2BF72EF4000ACB40 /* landmarkData.json */,
+				BA09345E2BF71292000ACB40 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BA0934742BF7214D000ACB40 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				BA0934782BF72376000ACB40 /* LandmaksViewLayouts.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		BA0934772BF72229000ACB40 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				BA0934752BF7221B000ACB40 /* LandmaksEnum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA09345F2BF71292000ACB40 /* Assets.xcassets in Resources */,
+				BA09347D2BF72EF4000ACB40 /* landmarkData.json in Resources */,
 				BA0934622BF71292000ACB40 /* Base in Resources */,
 				BA09345D2BF71291000ACB40 /* Base in Resources */,
 			);
@@ -138,8 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA09345A2BF71291000ACB40 /* ViewController.swift in Sources */,
+				BA09345A2BF71291000ACB40 /* LandmaksViewController.swift in Sources */,
+				BA0934712BF71A3E000ACB40 /* LandmaksViewModel.swift in Sources */,
+				BA09347B2BF726D2000ACB40 /* LandmaksModel.swift in Sources */,
+				BA0934792BF72376000ACB40 /* LandmaksViewLayouts.swift in Sources */,
+				BA0934762BF7221B000ACB40 /* LandmaksEnum.swift in Sources */,
 				BA0934562BF71291000ACB40 /* AppDelegate.swift in Sources */,
+				BA0934732BF71A7E000ACB40 /* LandmaksCollectionViewCell.swift in Sources */,
 				BA0934582BF71291000ACB40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
